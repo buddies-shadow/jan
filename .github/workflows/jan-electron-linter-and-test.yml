@@ -57,6 +57,13 @@ jobs:
           rm -rf ~/jan
           make clean
 
+      - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
+        id: downloadfile
+        name: Download models
+        with:
+          url: "http://minio.jan.ai:9000/models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+          target: electron/test-data/models/tinyllama-1.1b/
+
       - name: Get Commit Message for PR
         if: github.event_name == 'pull_request'
         run: |
@@ -102,6 +109,13 @@ jobs:
           rm -rf ~/jan
           make clean
 
+      - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
+        id: downloadfile
+        name: Download models
+        with:
+          url: "http://minio.jan.ai:9000/models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+          target: electron/test-data/models/tinyllama-1.1b/
+
       - name: Linter and test
         run: |
           npm config set registry https://registry.npmjs.org --global
@@ -140,6 +154,13 @@ jobs:
               Write-Output "Folder does not exist."
           }
           make clean
+
+      - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
+        id: downloadfile
+        name: Download models
+        with:
+          url: "http://minio.jan.ai:9000/models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+          target: electron/test-data/models/tinyllama-1.1b/
 
       - name: Get Commit Message for push event
         if: github.event_name == 'push'
@@ -188,6 +209,13 @@ jobs:
               Write-Output "Folder does not exist."
           }
           make clean
+
+      - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
+        id: downloadfile
+        name: Download models
+        with:
+          url: "http://minio.jan.ai:9000/models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+          target: electron/test-data/models/tinyllama-1.1b/
 
       - name: Get Commit Message for PR
         if: github.event_name == 'pull_request'
@@ -238,6 +266,13 @@ jobs:
           }
           make clean
 
+      - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
+        id: downloadfile
+        name: Download models
+        with:
+          url: "http://minio.jan.ai:9000/models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+          target: electron/test-data/models/tinyllama-1.1b/
+
       - name: Linter and test
         shell: powershell
         run: |
@@ -264,6 +299,13 @@ jobs:
         run: |
           rm -rf ~/jan
           make clean
+
+      - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
+        id: downloadfile
+        name: Download models
+        with:
+          url: "http://minio.jan.ai:9000/models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+          target: electron/test-data/models/tinyllama-1.1b/
 
       - name: Get Commit Message for PR
         if: github.event_name == 'pull_request'
@@ -311,6 +353,13 @@ jobs:
         run: |
           rm -rf ~/jan
           make clean
+
+      - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
+        id: downloadfile
+        name: Download models
+        with:
+          url: "http://minio.jan.ai:9000/models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+          target: electron/test-data/models/tinyllama-1.1b/
 
       - name: Linter and test
         run: |
